@@ -13,6 +13,8 @@ public abstract class Vehiculo {
         this.horaIngreso = LocalDateTime.now();
     }
 
+    public abstract double calcularTarifa(int horasPermanencia);
+    
 	public String getPlaca() {
 		return placa;
 	}
@@ -44,6 +46,8 @@ public abstract class Vehiculo {
 				+ getHoraIngreso() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
 				+ super.toString() + "]";
 	}
+
+
 
  
 }
